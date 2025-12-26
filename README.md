@@ -1,116 +1,138 @@
-# Brain Tumor Detection & Analysis System
+🧠 Brain Tumour Detection and 3D Visualization
 
-This application is designed to detect and analyze brain tumors from MRI scans, providing comprehensive information, 3D visualization, and an AI-powered chat interface for medical queries.
+This project aims to detect brain tumours from MRI images using deep learning and provide an interactive 3D visualization of the human brain through a web-based interface.
 
-## Features
+The system integrates a trained deep learning model with a Flask web application, allowing users to upload MRI images, perform tumour detection, and visualize anatomical regions using a 3D brain model.
 
-- Brain tumor detection and classification using YOLOv8
-- 3D visualization of tumor location in the brain
-- Detailed information about the tumor type, location, and potential impacts
-- AI-powered chat assistant with real-time web search integration
-- Mixtral/Grok LLM integration for enhanced responses
+🎯 Objectives
 
-## Setup Instructions
+Detect the presence of brain tumours from MRI scans
 
-### Prerequisites
+Classify tumour types using a trained deep learning model
 
-- Python 3.8+
-- Flask
-- OpenCV
-- NumPy
-- Ultralytics (YOLOv8)
-- API keys for web search and Mixtral/Grok (optional but recommended)
+Provide an intuitive web interface for interaction
 
-### Installation
+Visualize brain anatomy in 3D for better understanding
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/brain-tumor-detection.git
-   cd brain-tumor-detection
-   ```
+Serve as an academic major project under guided development
 
-2. Install requirements:
-   ```
-   pip install -r requirements.txt
-   ```
+✨ Features
 
-3. Configure API keys:
-   - Open `ai_bot.py` and `main2.py`
-   - Replace the placeholder API key values with your actual API keys
-   - Save the files
+📤 Upload MRI images via web interface
 
-4. Start the application:
-   ```
-   python main2.py
-   ```
+🤖 Tumour detection using a YOLO-based deep learning model
 
-5. Open the application in your browser at `http://localhost:5000`
+📊 Result display with tumour / no-tumour classification
 
-### API Keys Setup
+🧠 Interactive 3D brain visualization (.glb model)
 
-#### Web Search API (choose one)
+🌐 Flask-based backend and HTML frontend
 
-1. **Google Custom Search API (recommended)**
-   - Create a Custom Search Engine at [https://cse.google.com/cse/](https://cse.google.com/cse/)
-   - Get API key at [https://developers.google.com/custom-search/v1/overview](https://developers.google.com/custom-search/v1/overview)
-   - Update the values in `ai_bot.py` and `main2.py`:
-     ```python
-     os.environ.setdefault("SEARCH_API_KEY", "your_google_api_key_here")
-     os.environ.setdefault("SEARCH_ENGINE_ID", "your_search_engine_id_here") 
-     os.environ.setdefault("SEARCH_API_TYPE", "google")
-     ```
+🛠️ Technology Stack
 
-2. **Bing Search API**
-   - Get API key at [https://portal.azure.com/#create/microsoft.bingsearch](https://portal.azure.com/#create/microsoft.bingsearch)
-   - Update the values in `ai_bot.py` and `main2.py`:
-     ```python
-     os.environ.setdefault("SEARCH_API_KEY", "your_bing_api_key_here")
-     os.environ.setdefault("SEARCH_API_TYPE", "bing")
-     ```
+Python
 
-3. **SerpAPI**
-   - Get API key at [https://serpapi.com/](https://serpapi.com/)
-   - Update the values in `ai_bot.py` and `main2.py`:
-     ```python
-     os.environ.setdefault("SEARCH_API_KEY", "your_serpapi_key_here")
-     os.environ.setdefault("SEARCH_API_TYPE", "serpapi")
-     ```
+Flask
 
-#### Mixtral/Grok API (Optional)
-- Get API key from Grok/xAI
-- Update the value in `ai_bot.py` and `main2.py`:
-  ```python
-  os.environ.setdefault("GROK_API_KEY", "your_grok_api_key_here")
-  ```
+Ultralytics YOLO
 
-## Usage
+OpenCV
 
-1. Upload an MRI scan image on the home page
-2. View detection results, including tumor type and confidence level
-3. Explore the 3D visualization by clicking "View in 3D"
-4. Access detailed tumor information on the dashboard
-5. Use the AI chat feature to ask questions about the detected tumor
+NumPy
 
-## AI Chat Features
+HTML / CSS / JavaScript
 
-The AI chat assistant provides information about:
-- Tumor types, locations, and sizes
-- Common symptoms and treatment options
-- Prognosis and research developments
-- References to medical sources for further reading
+Three.js (for 3D visualization)
 
-The AI bot performs real-time web searches for the most up-to-date information and, if configured, uses the Mixtral LLM to enhance response quality.
+📂 Project Structure
+Brain-Tumour-Detection-and-3D-Visualization/
+│
+├── components/                # Helper / experimental components
+│
+├── models/                    # Trained deep learning models
+│   ├── best.pt
+│   └── fibonacci_model.h5
+│
+├── static/
+│   ├── brain.glb              # 3D brain model
+│   └── uploads/               # Uploaded MRI images (runtime, ignored)
+│
+├── templates/                 # HTML templates
+│   ├── index.html
+│   ├── index2.html
+│   ├── index3.html
+│   ├── tumor_dashboard.html
+│   ├── visualize.html
+│   └── no_tumor.html
+│
+├── main2.py                   # Main Flask application (entry point)
+├── main3.py                   # Extended / alternate logic
+├── combine.py                 # Helper functions
+├── fibonacciNet.py            # Additional model logic
+├── ai_bot.py                  # Experimental AI assistant logic
+├── ai_bot.go                  # Experimental Go-based component
+├── explode_effect.html        # Standalone visualization experiment
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
 
-## Contributing
+🚀 How to Run the Project
+1️⃣ Clone the repository
+git clone https://github.com/shantanumohod23/Brain-Tumour-Detection-and-3D-Visualization.git
+cd Brain-Tumour-Detection-and-3D-Visualization
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+2️⃣ Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate
 
-## License
+3️⃣ Install dependencies
+pip install -r requirements.txt
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+4️⃣ Run the application
+python main2.py
 
-## Acknowledgments
+5️⃣ Open in browser
+http://127.0.0.1:5000
 
-- YOLOv8 team for the detection model
-- Three.js community for 3D visualization tools
-- Medical imaging community for dataset and research
+📦 Model & Asset Files
+
+The following large files are included in the repository but are excluded from Git versioning and uploaded manually to avoid repository size and dependency issues:
+
+models/best.pt
+
+models/fibonacci_model.h5
+
+static/brain.glb
+
+These files are required for full functionality.
+
+⚠️ Important Notes
+
+This project currently focuses on model inference and visualization.
+
+Model training was performed earlier using a brain MRI dataset.
+
+Uploaded MRI images are stored temporarily and are not tracked by Git.
+
+API keys and sensitive configurations are managed via environment variables.
+
+🎓 Academic Context
+
+This project is developed as part of an engineering major project, demonstrating the application of:
+
+Machine Learning & Deep Learning
+
+Computer Vision
+
+Web Application Development
+
+3D Visualization
+
+The project will be further enhanced in future stages under academic guidance.
+
+👤 Author
+
+Shantanu Mohod
+Engineering Student
+Major Project – Brain Tumour Detection & Visualization
