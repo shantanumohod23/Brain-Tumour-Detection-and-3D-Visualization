@@ -1,134 +1,140 @@
-BRAIN TUMOUR DETECTION AND 3D VISUALIZATION
+🧠 Brain Tumour Detection and 3D Visualization
 
+This project aims to detect brain tumours from MRI images using deep learning and provide an interactive 3D visualization of the human brain through a web-based interface.
 
-PROJECT OVERVIEW
-----------------
-This project focuses on detecting brain tumours from MRI images using deep learning
-and visualizing the human brain in 3D through a web-based interface.
+The system integrates a trained deep learning model with a Flask web application, allowing users to upload MRI images, perform tumour detection, and visualize anatomical regions using a 3D brain model.
 
-The system integrates a trained deep learning model with a Flask application,
-allowing users to upload MRI images, perform tumour detection, and visualize
-anatomical regions using an interactive 3D brain model.
+🎯 Objectives
 
+Detect the presence of brain tumours from MRI scans
 
-OBJECTIVES
-----------
-• Detect brain tumours from MRI scans
-• Classify tumour presence using a deep learning model
-• Provide a web-based interface for interaction
-• Visualize brain anatomy in 3D
-• Develop the project in academic stages under guidance
+Classify tumour types using a trained deep learning model
 
+Provide an intuitive web interface for interaction
 
-KEY FEATURES
-------------
-• MRI image upload functionality
-• Tumour detection using YOLO-based deep learning model
-• Tumour / No-Tumour classification output
-• Interactive 3D brain visualization
-• Flask-based backend with HTML frontend
+Visualize brain anatomy in 3D for better understanding
 
+Serve as an academic major project under guided development
 
-TECHNOLOGY STACK
-----------------
-• Python
-• Flask
-• Ultralytics YOLO
-• OpenCV
-• NumPy
-• HTML, CSS, JavaScript
-• Three.js (for 3D visualization)
+✨ Features
 
+📤 Upload MRI images via web interface
 
-PROJECT STRUCTURE
------------------
+🤖 Tumour detection using a YOLO-based deep learning model
+
+📊 Result display with tumour / no-tumour classification
+
+🧠 Interactive 3D brain visualization (.glb model)
+
+🌐 Flask-based backend and HTML frontend
+
+🛠️ Technology Stack
+
+Python
+
+Flask
+
+Ultralytics YOLO
+
+OpenCV
+
+NumPy
+
+HTML / CSS / JavaScript
+
+Three.js (for 3D visualization)
+
+📂 Project Structure
+```
 Brain-Tumour-Detection-and-3D-Visualization/
+│
+├── components/                # Helper / experimental components
+│
+├── models/                    # Trained deep learning models
+│   ├── best.pt
+│   └── fibonacci_model.h5
+│
+├── static/
+│   ├── brain.glb              # 3D brain model
+│   └── uploads/               # Uploaded MRI images (runtime, ignored)
+│
+├── templates/                 # HTML templates
+│   ├── index.html
+│   ├── index2.html
+│   ├── index3.html
+│   ├── tumor_dashboard.html
+│   ├── visualize.html
+│   └── no_tumor.html
+│
+├── main2.py                   # Main Flask application (entry point)
+├── main3.py                   # Extended / alternate logic
+├── combine.py                 # Helper functions
+├── fibonacciNet.py            # Additional model logic
+├── ai_bot.py                  # Experimental AI assistant logic
+├── ai_bot.go                  # Experimental Go-based component
+├── explode_effect.html        # Standalone visualization experiment
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
-|-- components/
-|
-|-- models/
-|   |-- best.pt
-|   |-- fibonacci_model.h5
-|
-|-- static/
-|   |-- brain.glb
-|   |-- uploads/
-|
-|-- templates/
-|   |-- index.html
-|   |-- index2.html
-|   |-- index3.html
-|   |-- tumor_dashboard.html
-|   |-- visualize.html
-|   |-- no_tumor.html
-|
-|-- main2.py
-|-- main3.py
-|-- combine.py
-|-- fibonacciNet.py
-|-- ai_bot.py
-|-- ai_bot.go
-|-- explode_effect.html
-|
-|-- requirements.txt
-|-- README.md
-|-- .gitignore
+🚀 How to Run the Project
+1️⃣ Clone the repository
+git clone https://github.com/shantanumohod23/Brain-Tumour-Detection-and-3D-Visualization.git
+cd Brain-Tumour-Detection-and-3D-Visualization
 
+2️⃣ Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate
 
-HOW TO RUN THE PROJECT
----------------------
-1. Clone the repository
-   git clone https://github.com/shantanumohod23/Brain-Tumour-Detection-and-3D-Visualization.git
+3️⃣ Install dependencies
+pip install -r requirements.txt
 
-2. Create and activate virtual environment
-   python -m venv venv
-   venv\Scripts\activate
+4️⃣ Run the application
+python main2.py
 
-3. Install dependencies
-   pip install -r requirements.txt
+5️⃣ Open in browser
+http://127.0.0.1:5000
 
-4. Run the application
-   python main2.py
+📦 Model & Asset Files
 
-5. Open in browser
-   http://127.0.0.1:5000
+The following large files are included in the repository but are excluded from Git versioning and uploaded manually to avoid repository size and dependency issues:
 
+models/best.pt
 
-MODEL AND ASSET FILES
---------------------
-The following large files are included in the project but excluded from Git
-versioning and uploaded manually to avoid repository size and dependency issues:
+models/fibonacci_model.h5
 
-• models/best.pt
-• models/fibonacci_model.h5
-• static/brain.glb
+static/brain.glb
 
 These files are required for full functionality.
 
+⚠️ Important Notes
 
-IMPORTANT NOTES
----------------
-• The project currently focuses on model inference and visualization
-• Model training was performed earlier using a brain MRI dataset
-• Uploaded images are stored temporarily and ignored by Git
-• Sensitive API keys are managed using environment variables
+This project currently focuses on model inference and visualization.
 
+Model training was performed earlier using a brain MRI dataset.
 
-ACADEMIC CONTEXT
-----------------
-This project is developed as part of an Engineering Major Project and demonstrates
-the application of:
+Uploaded MRI images are stored temporarily and are not tracked by Git.
 
-• Machine Learning
-• Computer Vision
-• Web Development
-• 3D Visualization
+API keys and sensitive configurations are managed via environment variables.
 
-Future stages will enhance model accuracy, user interface, and explainability.
+🎓 Academic Context
 
+This project is developed as part of an engineering major project, demonstrating the application of:
 
-AUTHOR
-------
+Machine Learning & Deep Learning
+
+Computer Vision
+
+Web Application Development
+
+3D Visualization
+
+The project will be further enhanced in future stages under academic guidance.
+
+👤 Author
+
 Shantanu Mohod
 Engineering Student
-Brain Tumour Detection and 3D Visualization Project
+Major Project – Brain Tumour Detection & Visualization
