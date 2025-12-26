@@ -74,11 +74,6 @@ Brain-Tumour-Detection-and-3D-Visualization/
 ├── README.md
 └── .gitignore
 
-yaml
-Copy code
-
----
-
 ## 🚀 How to Run the Project
 
 ### 1. Clone the repository
