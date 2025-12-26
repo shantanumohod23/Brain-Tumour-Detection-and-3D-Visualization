@@ -43,36 +43,20 @@ anatomical regions using a 3D brain model.
 
 ## 📂 Project Structure
 
-Brain-Tumour-Detection-and-3D-Visualization/
-│
-├── components/
-├── models/
-│ ├── best.pt
-│ └── fibonacci_model.h5
-│
-├── static/
-│ ├── brain.glb
-│ └── uploads/
-│
-├── templates/
-│ ├── index.html
-│ ├── index2.html
-│ ├── index3.html
-│ ├── tumor_dashboard.html
-│ ├── visualize.html
-│ └── no_tumor.html
-│
-├── main2.py
-├── main3.py
-├── combine.py
-├── fibonacciNet.py
-├── ai_bot.py
-├── ai_bot.go
-├── explode_effect.html
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+|
+|-- components/
+|
+|-- models/
+| |-- best.pt
+| -- fibonacci_model.h5 | |-- static/ | |-- brain.glb | -- uploads/
+|
+|-- templates/
+| |-- index.html
+| |-- index2.html
+| |-- index3.html
+| |-- tumor_dashboard.html
+| |-- visualize.html
+| -- no_tumor.html | |-- main2.py |-- main3.py |-- combine.py |-- fibonacciNet.py |-- ai_bot.py |-- ai_bot.go |-- explode_effect.html | |-- requirements.txt |-- README.md -- .gitignore
 
 ## 🚀 How to Run the Project
 
