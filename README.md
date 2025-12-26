@@ -131,85 +131,62 @@ Brain-Tumour-Detection-and-3D-Visualization/
 └── .gitignore
 ```
 🚀 How to Run the Project
-1️⃣ Clone the repository
-```bash
-git clone https://github.com/shantanumohod23/Brain-Tumour-Detection-and-3D-Visualization.git
-cd Brain-Tumour-Detection-and-3D-Visualization
+1. Clone the repository
+   git clone https://github.com/shantanumohod23/Brain-Tumour-Detection-and-3D-Visualization.git
+   cd Brain-Tumour-Detection-and-3D-Visualization
 
-2️⃣ Create and activate a virtual environment
-2. Create and activate virtual environment
-bash
-Copy code
-python -m venv venv
-venv\Scripts\activate
+2. Create and activate a virtual environment
+   python -m venv venv
+   venv\Scripts\activate
 
-3️⃣ Install dependencies
 3. Install dependencies
-bash
-Copy code
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
-4️⃣ Run the application
 4. Run the application
-bash
-Copy code
-python main2.py
+   python main2.py
 
-5️⃣ Open in browser
 5. Open in browser
-cpp
-Copy code
-http://127.0.0.1:5000
+   http://127.0.0.1:5000
 
-📦 Model & Asset Files
-
-The following large files are included in the repository but are excluded from Git versioning and uploaded manually to avoid repository size and dependency issues:
 📦 Model and Asset Files
-The following files are uploaded manually and excluded from Git versioning
+
+The following large files are uploaded manually and excluded from Git versioning
 to avoid repository size and dependency issues:
 
 models/best.pt
 
-@@ -107,32 +114,30 @@ static/brain.glb
+models/fibonacci_model.h5
 
-These files are required for full functionality.
+static/brain.glb
+
+These files are required for full functionality of the project.
 
 ⚠️ Important Notes
 
-This project currently focuses on model inference and visualization.
-⚠️ Notes
-This project currently focuses on inference and visualization.
+This project currently focuses on model inference and visualization
 
-Model training was performed earlier using a brain MRI dataset.
+Model training was performed earlier using a brain MRI dataset
 
-Uploaded MRI images are stored temporarily and are not tracked by Git.
-Uploaded images are stored temporarily and ignored by Git.
+Uploaded MRI images are stored temporarily and ignored by Git
 
-API keys and sensitive configurations are managed via environment variables.
-Sensitive keys are managed using environment variables.
+API keys and sensitive configurations are managed using environment variables
 
 🎓 Academic Context
-This project is developed as part of an engineering major project
-demonstrating the application of:
 
-This project is developed as part of an engineering major project, demonstrating the application of:
+This project is developed as part of an Engineering Major Project, demonstrating the application of:
 
 Machine Learning & Deep Learning
-Machine Learning
 
 Computer Vision
 
 Web Application Development
-Web Development
 
 3D Visualization
 
 The project will be further enhanced in future stages under academic guidance.
-Future stages will enhance accuracy, UI, and explainability.
 
 👤 Author
 
 Shantanu Mohod
 Engineering Student
-Major Project – Brain Tumour Detection & Visualization
-Brain Tumour Detection and 3D Visualization Project
+Major Project – Brain Tumour Detection and 3D Visualization
