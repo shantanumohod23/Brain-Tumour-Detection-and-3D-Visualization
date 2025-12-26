@@ -42,22 +42,37 @@ anatomical regions using an interactive 3D brain model.
 ---
 
 ## 📂 Project Structure
-```
+```bash
 Brain-Tumour-Detection-and-3D-Visualization/
-|
-|-- components/
-|
-|-- models/
-| |-- best.pt
-| -- fibonacci_model.h5 | |-- static/ | |-- brain.glb | -- uploads/
-|
-|-- templates/
-| |-- index.html
-| |-- index2.html
-| |-- index3.html
-| |-- tumor_dashboard.html
-| |-- visualize.html
-| -- no_tumor.html | |-- main2.py |-- main3.py |-- combine.py |-- fibonacciNet.py |-- ai_bot.py |-- ai_bot.go |-- explode_effect.html | |-- requirements.txt |-- README.md -- .gitignore
+│
+├── components/
+├── models/
+│ ├── best.pt
+│ └── fibonacci_model.h5
+│
+├── static/
+│ ├── brain.glb
+│ └── uploads/
+│
+├── templates/
+│ ├── index.html
+│ ├── index2.html
+│ ├── index3.html
+│ ├── tumor_dashboard.html
+│ ├── visualize.html
+│ └── no_tumor.html
+│
+├── main2.py
+├── main3.py
+├── combine.py
+├── fibonacciNet.py
+├── ai_bot.py
+├── ai_bot.go
+├── explode_effect.html
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 ## 🚀 How to Run the Project
 
@@ -84,8 +99,8 @@ Brain-Tumour-Detection-and-3D-Visualization/
    http://127.0.0.1:5000
     
 📦 Model and Asset Files
-The following large files are uploaded manually and excluded from Git versioning
-to avoid repository size and dependency issues:
+   The following large files are uploaded manually and excluded from Git versioning
+   to avoid repository size and dependency issues:
 ```bash
 models/best.pt
 
@@ -96,28 +111,30 @@ static/brain.glb
 These files are required for full functionality of the project.
 ```
 ⚠️ Important Notes
-This project currently focuses on model inference and visualization
+   This project currently focuses on model inference and visualization
 
-Model training was performed earlier using a brain MRI dataset
+   Model training was performed earlier using a brain MRI dataset
 
-Uploaded MRI images are stored temporarily and ignored by Git
+   Uploaded MRI images are stored temporarily and ignored by Git
 
-API keys and sensitive configurations are managed using environment variables
+   API keys and sensitive configurations are managed using environment variables
 
 🎓 Academic Context
-This project is developed as part of an Engineering Major Project, demonstrating the application of:
+   This project is developed as part of an Engineering Major Project, demonstrating the application of:
 
-Machine Learning & Deep Learning
+   Machine Learning & Deep Learning
 
-Computer Vision
+   Computer Vision
 
-Web Application Development
+   Web Application Development
 
-3D Visualization
+   3D Visualization
 
-The project will be further enhanced in future stages under academic guidance.
+   The project will be further enhanced in future stages under academic guidance.
 
 👤 Author
 Shantanu Mohod
+
 Engineering Student
+
 Major Project – Brain Tumour Detection and 3D Visualization
