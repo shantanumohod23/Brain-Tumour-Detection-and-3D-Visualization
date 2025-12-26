@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Uploaded images & YOLO results
+static/uploads/*
+!static/uploads/.gitkeep
+uploads/*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Large model & 3D files (manual upload)
+models/*.pt
+models/*.h5
+static/*.glb
