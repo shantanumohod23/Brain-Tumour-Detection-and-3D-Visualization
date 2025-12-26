@@ -97,7 +97,7 @@ Brain-Tumour-Detection-and-3D-Visualization/
 9. Open in browser
     ```bash
    http://127.0.0.1:5000
-    
+---
 📦 Model and Asset Files
    The following large files are uploaded manually and excluded from Git versioning
    to avoid repository size and dependency issues:
@@ -110,28 +110,29 @@ static/brain.glb
 
 These files are required for full functionality of the project.
 ```
+---
 ⚠️ Important Notes
-   This project currently focuses on model inference and visualization
+  - This project currently focuses on model inference and visualization
 
-   Model training was performed earlier using a brain MRI dataset
+  - Model training was performed earlier using a brain MRI dataset
 
-   Uploaded MRI images are stored temporarily and ignored by Git
+  - Uploaded MRI images are stored temporarily and ignored by Git
 
-   API keys and sensitive configurations are managed using environment variables
-
+  - API keys and sensitive configurations are managed using environment variables
+---
 🎓 Academic Context
-   This project is developed as part of an Engineering Major Project, demonstrating the application of:
+  - This project is developed as part of an Engineering Major Project, demonstrating the application of:
 
-   Machine Learning & Deep Learning
+  - Machine Learning & Deep Learning
 
-   Computer Vision
+  - Computer Vision
 
-   Web Application Development
+  - Web Application Development
 
-   3D Visualization
+  - 3D Visualization
 
-   The project will be further enhanced in future stages under academic guidance.
-
+  - The project will be further enhanced in future stages under academic guidance.
+---
 👤 Author
 Shantanu Mohod
 
