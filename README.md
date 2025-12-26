@@ -1,122 +1,134 @@
-# 🧠 Brain Tumour Detection and 3D Visualization
+BRAIN TUMOUR DETECTION AND 3D VISUALIZATION
 
+
+PROJECT OVERVIEW
+----------------
 This project focuses on detecting brain tumours from MRI images using deep learning
-and visualizing the brain in 3D through a web-based interface.
+and visualizing the human brain in 3D through a web-based interface.
 
 The system integrates a trained deep learning model with a Flask application,
 allowing users to upload MRI images, perform tumour detection, and visualize
-anatomical regions using a 3D brain model.
+anatomical regions using an interactive 3D brain model.
 
----
 
-## 🎯 Objectives
+OBJECTIVES
+----------
+• Detect brain tumours from MRI scans
+• Classify tumour presence using a deep learning model
+• Provide a web-based interface for interaction
+• Visualize brain anatomy in 3D
+• Develop the project in academic stages under guidance
 
-- Detect brain tumours from MRI scans
-- Classify tumour presence using a deep learning model
-- Provide a web-based interface for interaction
-- Visualize brain anatomy in 3D
-- Develop the project in academic stages under guidance
 
----
+KEY FEATURES
+------------
+• MRI image upload functionality
+• Tumour detection using YOLO-based deep learning model
+• Tumour / No-Tumour classification output
+• Interactive 3D brain visualization
+• Flask-based backend with HTML frontend
 
-## ✨ Features
 
-- Upload MRI images
-- Tumour detection using YOLO-based model
-- Tumour / No-tumour result display
-- Interactive 3D brain visualization
-- Flask backend with HTML frontend
+TECHNOLOGY STACK
+----------------
+• Python
+• Flask
+• Ultralytics YOLO
+• OpenCV
+• NumPy
+• HTML, CSS, JavaScript
+• Three.js (for 3D visualization)
 
----
 
-## 🛠️ Technology Stack
+PROJECT STRUCTURE
+-----------------
+Brain-Tumour-Detection-and-3D-Visualization/
 
-- Python
-- Flask
-- Ultralytics YOLO
-- OpenCV
-- NumPy
-- HTML, CSS, JavaScript
-- Three.js (for 3D visualization)
-
----
-
-## 📂 Project Structure
-
-|
 |-- components/
 |
 |-- models/
-| |-- best.pt
-| -- fibonacci_model.h5 | |-- static/ | |-- brain.glb | -- uploads/
+|   |-- best.pt
+|   |-- fibonacci_model.h5
+|
+|-- static/
+|   |-- brain.glb
+|   |-- uploads/
 |
 |-- templates/
-| |-- index.html
-| |-- index2.html
-| |-- index3.html
-| |-- tumor_dashboard.html
-| |-- visualize.html
-| -- no_tumor.html | |-- main2.py |-- main3.py |-- combine.py |-- fibonacciNet.py |-- ai_bot.py |-- ai_bot.go |-- explode_effect.html | |-- requirements.txt |-- README.md -- .gitignore
+|   |-- index.html
+|   |-- index2.html
+|   |-- index3.html
+|   |-- tumor_dashboard.html
+|   |-- visualize.html
+|   |-- no_tumor.html
+|
+|-- main2.py
+|-- main3.py
+|-- combine.py
+|-- fibonacciNet.py
+|-- ai_bot.py
+|-- ai_bot.go
+|-- explode_effect.html
+|
+|-- requirements.txt
+|-- README.md
+|-- .gitignore
 
-## 🚀 How to Run the Project
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/shantanumohod23/Brain-Tumour-Detection-and-3D-Visualization.git
-cd Brain-Tumour-Detection-and-3D-Visualization
+HOW TO RUN THE PROJECT
+---------------------
+1. Clone the repository
+   git clone https://github.com/shantanumohod23/Brain-Tumour-Detection-and-3D-Visualization.git
+
 2. Create and activate virtual environment
-bash
-Copy code
-python -m venv venv
-venv\Scripts\activate
+   python -m venv venv
+   venv\Scripts\activate
+
 3. Install dependencies
-bash
-Copy code
-pip install -r requirements.txt
+   pip install -r requirements.txt
+
 4. Run the application
-bash
-Copy code
-python main2.py
+   python main2.py
+
 5. Open in browser
-cpp
-Copy code
-http://127.0.0.1:5000
-📦 Model and Asset Files
-The following files are uploaded manually and excluded from Git versioning
-to avoid repository size and dependency issues:
+   http://127.0.0.1:5000
 
-models/best.pt
 
-models/fibonacci_model.h5
+MODEL AND ASSET FILES
+--------------------
+The following large files are included in the project but excluded from Git
+versioning and uploaded manually to avoid repository size and dependency issues:
 
-static/brain.glb
+• models/best.pt
+• models/fibonacci_model.h5
+• static/brain.glb
 
 These files are required for full functionality.
 
-⚠️ Notes
-This project currently focuses on inference and visualization.
 
-Model training was performed earlier using a brain MRI dataset.
+IMPORTANT NOTES
+---------------
+• The project currently focuses on model inference and visualization
+• Model training was performed earlier using a brain MRI dataset
+• Uploaded images are stored temporarily and ignored by Git
+• Sensitive API keys are managed using environment variables
 
-Uploaded images are stored temporarily and ignored by Git.
 
-Sensitive keys are managed using environment variables.
+ACADEMIC CONTEXT
+----------------
+This project is developed as part of an Engineering Major Project and demonstrates
+the application of:
 
-🎓 Academic Context
-This project is developed as part of an engineering major project
-demonstrating the application of:
+• Machine Learning
+• Computer Vision
+• Web Development
+• 3D Visualization
 
-Machine Learning
+Future stages will enhance model accuracy, user interface, and explainability.
 
-Computer Vision
 
-Web Development
-
-3D Visualization
-
-Future stages will enhance accuracy, UI, and explainability.
-
-👤 Author
+AUTHOR
+------
 Shantanu Mohod
 Engineering Student
 Brain Tumour Detection and 3D Visualization Project
